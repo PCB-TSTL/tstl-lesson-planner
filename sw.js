@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'tstl-lesson-planner-v1.0.0';
+const CACHE_VERSION = 'tstl-lesson-planner-v1.0.1';
 const APP_CACHE = `${CACHE_VERSION}-app`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 

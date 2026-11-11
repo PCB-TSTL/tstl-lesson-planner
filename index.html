@@ -3350,21 +3350,6 @@ function printSnapshot(){
     <footer>TSTL Lesson Planner · Progress Snapshot</footer>
     <script>window.onload=()=>{window.print();}<\/script>
   
-<script>
-(function(){
-  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
-    window.addEventListener('load', function(){
-      navigator.serviceWorker.register('./sw.js').catch(function(err){
-        console.warn('Service worker registration failed:', err);
-      });
-    });
-  }
-
-  if (navigator.storage && navigator.storage.persist) {
-    navigator.storage.persist().catch(function(){});
-  }
-})();
-</script>
 
 </body></html>`);
   w.document.close();
@@ -3878,6 +3863,22 @@ bootstrapApp().catch(err=>{
   console.error(err);
   showToast('The Lesson Planner could not initialise correctly.');
 });
+</script>
+
+<script>
+(function(){
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    window.addEventListener('load', function(){
+      navigator.serviceWorker.register('./sw.js').catch(function(err){
+        console.warn('Service worker registration failed:', err);
+      });
+    });
+  }
+
+  if (navigator.storage && navigator.storage.persist) {
+    navigator.storage.persist().catch(function(){});
+  }
+})();
 </script>
 </body>
 </html>
