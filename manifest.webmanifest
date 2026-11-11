@@ -1,0 +1,44 @@
+{
+  "id": "./",
+  "name": "TSTL Lesson Planner",
+  "short_name": "TSTL Planner",
+  "description": "A free lesson planning and teaching record tool for music teachers, created by The String Teaching Library.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f1e8",
+  "theme_color": "#315f4a",
+  "orientation": "any",
+  "lang": "en-GB",
+  "categories": [
+    "education",
+    "productivity",
+    "music"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
